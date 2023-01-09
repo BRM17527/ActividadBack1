@@ -1,0 +1,24 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher   
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: genesispost
+    url: jdbc:postgresql://localhost:5433/products
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  sql:
+    init:
+      platform: postgres
+      
+
+   
